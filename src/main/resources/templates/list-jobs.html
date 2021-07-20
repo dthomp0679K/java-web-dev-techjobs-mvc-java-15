@@ -19,7 +19,7 @@
         </tr>
         <tr>
             <td>Name</td>
-            <td th:text="${job.getName()}"></td>
+            <td><a th:href="@{/list/jobs(column=name,value=${job.getName()})}" th:text="${job.getName()}"></a></td>
         </tr>
         <tr>
             <td>Employer</td>
